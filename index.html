@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script src="https://kit.fontawesome.com/4c536a6bd5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="header">
+        <div class="container header--container">
+            <h1 id="title">Etch - a - Sketch</h1>
+        </div>
+    </section>
+
+    <section id="drawboard">
+        <div class="container dashboard--container">
+            <div class="settings">
+                <input type="color" id="color-picker" type="color" value="#33323d">
+                <button id="color-btn">Color Mode</button>
+                <button id="rainbow-color-btn">Rainbow Mode</button>
+                <button id="eraser-btn">Eraser</button>
+                <button id="reset-btn">Reset</button>
+                <div class="db_size_value" id="db-size-value">16 x 16</div>
+                <input type="range" id="db-size-slider" value="16" min="1" max="64">
+                <div class="db_grid" id="db-grid"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container footer--container">
+            <p>
+                Copyright &copy;
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>
+                bareknuckles
+            </p>
+            <a href="http://github.com/bareknuckles" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </section>
+
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
